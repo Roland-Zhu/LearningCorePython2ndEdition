@@ -28,3 +28,22 @@ elif test == 0:
     print 0
 else:
     print '-'
+string = raw_input('enter a string:')
+counter = 0
+while counter < len(string):
+    print string[counter],
+    counter += 1
+print
+for k, v in enumerate(string):
+    print k, v
+
+li = [2, 3, 4, 5, 5]
+print sum(li) / float(5)
+i = 1
+while i:
+    n = int(raw_input('Enter a number between 1-100:'))
+    if n <= 100 and n >= 1:
+        print('Done')
+        i = 0
+    else:
+        print('Error')
